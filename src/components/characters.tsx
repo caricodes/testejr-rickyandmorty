@@ -78,50 +78,46 @@ export function Characters() {
             </li>
 
             <li>
-              <span className="font-bold">Genêro: </span>
-              {
-                character.gender === "Male"
-								? "Masculino"
-								: character.gender === "Female"
-								? "Feminino"
-								: character.gender === "unknown"
-								? "Desconhecido" 
-                : null
-              }
+               <span className="font-bold">Genêro: </span>
+               {character.gender === "Male"
+		  ? "Masculino"
+		  : character.gender === "Female"
+		  ? "Feminino"
+		  : character.gender === "unknown"
+		  ? "Desconhecido" 
+                  : null}
             </li>
 
             <li>
-							<span className="font-bold">Status: </span>
-							{
-                character.status === "Alive"
-								? "Vivo"
-								: character.status === "Dead"
-								? "Morto"
-								: character.status === "unknown"
-								? "Desconhecido"
-								: null
-              }
-						</li>
+		<span className="font-bold">Status: </span>
+		{character.status === "Alive"
+		  ? "Vivo"
+		  : character.status === "Dead"
+		  ? "Morto"
+		  : character.status === "unknown"
+		  ? "Desconhecido"
+		  : null}
+	    </li>
 
             <li>
-              <span className="font-bold">Total de aparições: </span>
-							{totalApperances(character)}
+                <span className="font-bold">Total de aparições: </span>
+	        {totalApperances(character)}
             </li>
 
-            <li>
-							<span className="font-bold">Aparições na primeira temporada: </span>
-							{totalApperancesSeason1(character)}
-						</li>
+           <li>
+		<span className="font-bold">Aparições na primeira temporada: </span>
+		{totalApperancesSeason1(character)}
+	   </li>
 
             <li>
-							<span className="font-bold">Aparições na segunda temporada: </span>
-							{totalApperancesSeason2(character)}
-						</li>
+		 <span className="font-bold">Aparições na segunda temporada: </span>
+		 {totalApperancesSeason2(character)}
+	    </li>
 
             <li>
-							<span className="font-bold">Aparições na terceira temporada: </span>
-              {totalApperancesSeason3(character)}
-						</li>
+	        <span className="font-bold">Aparições na terceira temporada: </span>
+                {totalApperancesSeason3(character)}
+	    </li>
           </ul>
         </div>
       ))}
